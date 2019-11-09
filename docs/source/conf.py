@@ -49,7 +49,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = 'Free meal inviter'
-copyright = '2016, Alberto Egido'
+copyright = '2019, Alberto Egido'
 author = 'Alberto Egido'
 
 # The version info for the project you're documenting, acts as replacement for

@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 from codecs import open
 from os import path
 
-__version__ = '0.0.1'
+__version__ = '0.0.3'
 
 here = path.abspath(path.dirname(__file__))
 
@@ -31,7 +31,12 @@ setup(
       'Programming Language :: Python :: 3',
     ],
     keywords='',
-    packages=find_packages(exclude=['docs', 'tests*']),
+    packages=find_packages(exclude=['docs', 'tests*', 'data']),
+    entry_points={
+        'console_scripts': [
+            'free_meal_inviter=free_meal_inviter.cli:main',
+        ],
+    },
     include_package_data=True,
     author='Alberto Egido',
     install_requires=install_requires,
